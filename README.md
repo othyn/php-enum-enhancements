@@ -13,6 +13,8 @@ The package so far provides;
 - Adds a new static `valueArray(): array` method that returns all values within an Enum as an equally typed array of Enum values
 - Adds a new static `valueList(string $separator = ', '): string` method that returns all values within an Enum as a comma separated list string
 
+The package is available on Packagist as [othyn/php-enum-enhancements](https://packagist.org/packages/othyn/php-enum-enhancements).
+
 ---
 
 ## Installation
