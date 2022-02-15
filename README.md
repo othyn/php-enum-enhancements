@@ -10,8 +10,8 @@ A [Composer](https://getcomposer.org/) package for [PHP](https://www.php.net/) t
 The package so far provides;
 
 - A handy trait that extends PHP's native Enum type
-- Adds a new static `valueArray(): array` method that returns all values within an Enum as an equally typed array of Enum values
-- Adds a new static `valueList(string $separator = ', '): string` method that returns all values within an Enum as a comma separated list string
+- Adds a new static `UnitEnum::valueArray(): array` method that returns all values within an Enum as an equally typed array of Enum values
+- Adds a new static `UnitEnum::valueList(string $separator = ', '): string` method that returns all values within an Enum as a comma separated list string
 
 The package is available on Packagist as [othyn/php-enum-enhancements](https://packagist.org/packages/othyn/php-enum-enhancements).
 
@@ -51,17 +51,21 @@ enum TestEnum
     case Echo;
 }
 
-print_r(TestEnum::valueArray());
+var_dump(TestEnum::valueArray());
 
 // Results in the following being printed:
-// Array
-// (
-//     [0] => Alpha
-//     [1] => Bravo
-//     [2] => Charlie
-//     [3] => Delta
-//     [4] => Echo
-// )
+// array(5) {
+//   [0]=>
+//   string(5) "Alpha"
+//   [1]=>
+//   string(5) "Bravo"
+//   [2]=>
+//   string(7) "Charlie"
+//   [3]=>
+//   string(5) "Delta"
+//   [4]=>
+//   string(4) "Echo"
+// }
 ```
 
 ### Enum: Value List
@@ -84,15 +88,15 @@ enum TestEnum
     case Echo;
 }
 
-print_r(TestEnum::valueList());
+var_dump(TestEnum::valueList());
 
 // Results in the following being printed:
-// 'Alpha, Bravo, Charlie, Delta, Echo'
+// string(34) "Alpha, Bravo, Charlie, Delta, Echo"
 
-print_r(TestEnum::valueList(separator: ':'));
+var_dump(TestEnum::valueList(separator: ':'));
 
 // Results in the following being printed:
-// 'Alpha:Bravo:Charlie:Delta:Echo'
+// string(30) "Alpha:Bravo:Charlie:Delta:Echo"
 ```
 
 ### Backed String Enum: Value Array
@@ -115,17 +119,21 @@ enum TestStringBackedEnum: string
     case Echo    = 'echo';
 }
 
-print_r(TestStringBackedEnum::valueArray());
+var_dump(TestStringBackedEnum::valueArray());
 
 // Results in the following being printed:
-// Array
-// (
-//     [0] => alpha
-//     [1] => bravo
-//     [2] => charlie
-//     [3] => delta
-//     [4] => echo
-// )
+// array(5) {
+//   [0]=>
+//   string(5) "alpha"
+//   [1]=>
+//   string(5) "bravo"
+//   [2]=>
+//   string(7) "charlie"
+//   [3]=>
+//   string(5) "delta"
+//   [4]=>
+//   string(4) "echo"
+// }
 ```
 
 ### Backed String Enum: Value List
@@ -148,15 +156,15 @@ enum TestStringBackedEnum: string
     case Echo    = 'echo';
 }
 
-print_r(TestStringBackedEnum::valueList());
+var_dump(TestStringBackedEnum::valueList());
 
 // Results in the following being printed:
-// 'alpha, bravo, charlie, delta, echo'
+// string(34) "alpha, bravo, charlie, delta, echo"
 
-print_r(TestStringBackedEnum::valueList(separator: ':'));
+var_dump(TestStringBackedEnum::valueList(separator: ':'));
 
 // Results in the following being printed:
-// 'alpha:bravo:charlie:delta:echo'
+// string(30) "alpha:bravo:charlie:delta:echo"
 ```
 
 ### Backed Int Enum: Value Array
@@ -179,17 +187,21 @@ enum TestIntBackedEnum: int
     case Five  = 5;
 }
 
-print_r(TestIntBackedEnum::valueArray());
+var_dump(TestIntBackedEnum::valueArray());
 
 // Results in the following being printed:
-// Array
-// (
-//     [0] => 1
-//     [1] => 2
-//     [2] => 3
-//     [3] => 4
-//     [4] => 5
-// )
+// array(5) {
+//   [0]=>
+//   int(1)
+//   [1]=>
+//   int(2)
+//   [2]=>
+//   int(3)
+//   [3]=>
+//   int(4)
+//   [4]=>
+//   int(5)
+// }
 ```
 
 ### Backed Int Enum: Value List
@@ -212,15 +224,15 @@ enum TestIntBackedEnum: int
     case Five  = 5;
 }
 
-print_r(TestIntBackedEnum::valueList());
+var_dump(TestIntBackedEnum::valueList());
 
 // Results in the following being printed:
-// '1, 2, 3, 4, 5'
+// string(13) "1, 2, 3, 4, 5"
 
-print_r(TestIntBackedEnum::valueList(separator: ':'));
+var_dump(TestIntBackedEnum::valueList(separator: ':'));
 
 // Results in the following being printed:
-// '1:2:3:4:5'
+// string(9) "1:2:3:4:5"
 ```
 
 ---
@@ -275,7 +287,31 @@ composer docker-shell
 
 ## Changelog
 
-Any and all project changes for releases should be documented below. Versioning follows the SEMVER standard.
+Any and all project changes for releases should be documented below. Versioning follows the [SemVer](https://semver.org/) standard.
+
+---
+
+### Version 1.0.1
+
+[[Git Changes]](https://github.com/othyn/php-enum-enhancements/compare/v1.0.0...v1.0.1) TBD.
+
+#### Added
+
+- Everything
+
+#### Changed
+
+- SemVer verbiage and link change in the README.
+- Change usage examples in the readme to instead utilise `var_dump` to demonstrate the resulting types within the array returned from `UnitEnum::valueArray()`.
+- Utilised the `UnitEnum` base type within the docs in code examples where a test Enum is not present.
+
+#### Fixed
+
+- Everything
+
+#### Removed
+
+- Nothing
 
 ---
 

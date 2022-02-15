@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644950819">
-  <project timestamp="1644950819">
+<coverage generated="1644952377">
+  <project timestamp="1644952377">
     <file name="/testing/src/Traits/EnumEnhancements.php">
       <class name="Othyn\PhpEnumEnhancements\Traits\EnumEnhancements" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
