@@ -17,6 +17,7 @@ class ItExtendsIntBackedEnumsTest extends TestCase
 
     public function test_it_can_produce_a_value_list_for_an_int_backed_enum(): void
     {
+        var_dump(TestIntBackedEnum::valueList());
         $this->assertSame(
             TestIntBackedEnum::valueList(),
             '1, 2, 3, 4, 5'
@@ -25,6 +26,7 @@ class ItExtendsIntBackedEnumsTest extends TestCase
 
     public function test_it_can_produce_a_value_list_with_a_custom_separator_for_an_enum(): void
     {
+        var_dump(TestIntBackedEnum::valueList(separator: ':'));
         $this->assertSame(
             TestIntBackedEnum::valueList(separator: ':'),
             '1:2:3:4:5'
