@@ -293,7 +293,7 @@ Any and all project changes for releases should be documented below. Versioning 
 
 ### Version 1.0.1
 
-[[Git Changes]](https://github.com/othyn/php-enum-enhancements/compare/v1.0.0...v1.0.1) TBD.
+[[Git Changes]](https://github.com/othyn/php-enum-enhancements/compare/v1.0.0...v1.0.1) README changes.
 
 #### Added
 
