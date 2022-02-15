@@ -275,7 +275,29 @@ composer docker-shell
 
 ## Changelog
 
-Any and all project changes for releases should be documented below. Versioning follows the SEMVER standard.
+Any and all project changes for releases should be documented below. Versioning follows the [SemVer](https://semver.org/) standard.
+
+---
+
+### Version 1.0.1
+
+[[Git Changes]](https://github.com/othyn/php-enum-enhancements/compare/v1.0.0...v1.0.1) TBD.
+
+#### Added
+
+- Everything
+
+#### Changed
+
+- SemVer verbiage and link change in the README.
+
+#### Fixed
+
+- Everything
+
+#### Removed
+
+- Nothing
 
 ---
 
