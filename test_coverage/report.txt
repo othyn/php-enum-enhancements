@@ -1,0 +1,12 @@
+
+
+Code Coverage Report:   
+  2022-02-15 18:46:59   
+                        
+ Summary:               
+  Classes: 100.00% (1/1)
+  Methods: 100.00% (2/2)
+  Lines:   100.00% (4/4)
+
+Othyn\PhpEnumEnhancements\Traits\EnumEnhancements
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  4/  4)

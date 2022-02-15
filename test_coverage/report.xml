@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1644950819">
+  <project timestamp="1644950819">
+    <file name="/testing/src/Traits/EnumEnhancements.php">
+      <class name="Othyn\PhpEnumEnhancements\Traits\EnumEnhancements" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+      </class>
+      <line num="10" type="method" name="valueArray" visibility="public" complexity="2" crap="2" count="9"/>
+      <line num="12" type="stmt" count="9"/>
+      <line num="13" type="stmt" count="9"/>
+      <line num="16" type="stmt" count="9"/>
+      <line num="22" type="method" name="valueList" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="24" type="stmt" count="6"/>
+      <metrics loc="26" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+    </file>
+    <metrics files="1" loc="26" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+  </project>
+</coverage>

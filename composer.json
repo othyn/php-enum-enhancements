@@ -1,0 +1,38 @@
+{
+    "name": "othyn/php-enum-enhancements",
+    "description": "Adds some helpful enum traits to the glorious new PHP Enum type.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben",
+            "email": "git@othyn.com",
+            "homepage": "https://othyn.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.13",
+        "friendsofphp/php-cs-fixer": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Othyn\\PhpEnumEnhancements\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Othyn\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "docker-build": "docker-compose build",
+        "docker-up": "docker-compose up -d",
+        "docker-shell": "docker-compose run --rm testing /bin/sh",
+        "style": "vendor/bin/php-cs-fixer fix",
+        "test": "docker-compose run --rm testing vendor/bin/phpunit",
+        "test-local": "XDEBUG_MODE=coverage vendor/bin/phpunit"
+    }
+}
