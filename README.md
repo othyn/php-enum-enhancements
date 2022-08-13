@@ -2,6 +2,7 @@
 
 [![Tests](https://github.com/othyn/php-enum-enhancements/actions/workflows/phpunit.yml/badge.svg)](https://github.com/othyn/php-enum-enhancements/actions/workflows/phpunit.yml)
 [![Code Style](https://github.com/othyn/php-enum-enhancements/actions/workflows/phpcsfixer.yml/badge.svg)](https://github.com/othyn/php-enum-enhancements/actions/workflows/phpcsfixer.yml)
+[![Downloads](https://img.shields.io/packagist/dt/othyn/php-enum-enhancements?color=green)](#installation)
 [![GitHub license](https://img.shields.io/github/license/othyn/php-enum-enhancements)](https://github.com/othyn/php-enum-enhancements/blob/main/LICENSE)
 [![Love](https://img.shields.io/badge/built%20with-love-red)](https://img.shields.io/badge/built%20with-love-red)
 
